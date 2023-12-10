@@ -1,7 +1,7 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,15 +11,15 @@
     <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/style-starter.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="{% static 'css/style-starter.css' %}">
+</head>
+<body>
 <!--w3l-header-->
 
 <header class="w3l-header-nav">
-	<!--/nav-->
+    <!--/nav-->
     { % include '_navbar.html' % }
-	<!--//nav-->
+    <!--//nav-->
 </header>
 <!-- //w3l-header -->
 <section class="w3l-breadcrumb">
@@ -27,7 +27,7 @@
         <div class="container py-lg-3">
 
             <h2>About Us</h2>
-            <p><a href="index.html">Home</a> &nbsp; / &nbsp; About</p>
+            <p><a href="{% url 'index' %}">Home</a> &nbsp; / &nbsp; About</p>
 
         </div>
     </div>
@@ -53,7 +53,7 @@
                 <div class="maghny-gd-1 col-lg-4 col-md-6">
                     <div class="maghny-grid">
                         <figure class="effect-lily border-radius">
-                            <img class="img-fluid" src="assets/images/about1.jpg">
+                            <img class="img-fluid" src="{% static 'images/about1.jpg' %}">
                             <figcaption class="w3set-hny">
                                 <div>
                                     <h4>Top Restaurant <span> Hotels</span></h4>
@@ -67,7 +67,7 @@
                 <div class="maghny-gd-1 col-lg-4 col-md-6 mt-md-0 mt-4">
                     <div class="maghny-grid">
                         <figure class="effect-lily border-radius">
-                            <img class="img-fluid" src="assets/images/about2.jpg">
+                            <img class="img-fluid" src="{% static 'images/about2.jpg' %}">
                             <figcaption class="w3set-hny">
                                 <div>
                                     <h4>Spa and Wellness <span> Hotels</span></h4>
@@ -81,7 +81,7 @@
                 <div class="maghny-gd-1 col-lg-4 col-md-6 mt-lg-0 mt-4">
                     <div class="maghny-grid">
                         <figure class="effect-lily border-radius">
-                            <img class="img-fluid" src="assets/images/about3.jpg">
+                            <img class="img-fluid" src="{% static 'images/about3.jpg' %}">
                             <figcaption class="w3set-hny">
                                 <div>
                                     <h4>Best Luxury Rooms <span> Hotels</span></h4>
@@ -96,6 +96,7 @@
         </div>
     </div>
 </div>
+
 <section class="w3-about-2" id="features">
     <div class="w3-services-ab py-5">
         <div class="container py-lg-4 py-md-3">
@@ -454,9 +455,8 @@
 </section>
 
 <!-- Template JavaScript -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-
-<script src="assets/js/owl.carousel.js"></script>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.js' %}"></script>
 <!-- script for banner slider-->
 <script>
   $(document).ready(function () {
@@ -526,7 +526,7 @@
   })
 </script>
 <!-- //script for owlcarousel -->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
 <script>
   $(document).ready(function () {
     $('.popup-with-zoom-anim').magnificPopup({
@@ -574,7 +574,7 @@ $(function () {
 </script>
 <!-- disable body scroll which navbar is in active -->
 
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
 
 </body>
 
