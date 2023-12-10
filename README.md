@@ -1,7 +1,7 @@
 # EasyBook Inn
 * This project implements a basic **hotel reservation system**.
 * Access to an account is secured with a **password**.
-* GUI is built using **Django** framework.
+* Django is used to create the **web application**.
 * All information are saved in **JSON** files.
 * The application is written in **Python**.
 * The project is licensed under **LGPL-3.0**.
