@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: arm64
+    runs-on: x64
     strategy:
       max-parallel: 3
       matrix:
