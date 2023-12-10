@@ -25,6 +25,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+    - name: Change Directory
+      run: cd /home/runner/work/hotel_system/hotel_system/
     - name: Run Tests
       run: |
+        cd /home/runner/work/hotel_system/hotel_system/
         python manage.py test
+
