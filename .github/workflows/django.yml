@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: x64
+    runs-on: ubuntu-latest
     strategy:
       max-parallel: 3
       matrix:
