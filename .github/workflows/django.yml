@@ -29,6 +29,5 @@ jobs:
       run: cd /home/runner/work/hotel_system/hotel_system/
     - name: Run Tests
       run: |
-        cd /home/runner/work/hotel_system/hotel_system/
         python manage.py test
 
